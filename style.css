@@ -114,7 +114,7 @@ body {
   margin-top: 1.25rem;
 }
 
-/* Responsive SharePoint / Stream embed (replaces fixed 1280×720 from the copied code) */
+/* Responsive YouTube (or other) 16:9 embed */
 .video-embed {
   position: relative;
   width: 100%;
