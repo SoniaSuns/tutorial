@@ -110,6 +110,15 @@ body {
   background: #f5f5f5;
 }
 
+.figure-pdf {
+  min-height: min(70vh, 540px);
+  border: 1px solid #ddd;
+}
+
+.figure-spaced {
+  margin-top: 1.25rem;
+}
+
 .caption {
   font-size: 0.9rem;
   color: #555;

@@ -32,4 +32,4 @@ Place final images and videos in the `assets/` folder:
 
 The page will be available at:
 
-`https://YOUR_GITHUB_USERNAME.github.io/jarvis-project-page/`
+https://soniasuns.github.io/tutorial/
