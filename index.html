@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>JARVIS: A Just-in-Time AR Visual Instruction System for Cross-Reality Task Guidance</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="page">
+    <header class="header">
+      <h1 class="title">JARVIS: A Just-in-Time AR Visual Instruction System for Cross-Reality Task Guidance</h1>
+      <p class="authors">Yusi Sun, Ying Jiang, Jiayin Lu, Yin Yang, Yong-Hong Kuo, Chenfanfu Jiang</p>
+      <p class="venue">arXiv Preprint, 2026</p>
+      <nav class="links" aria-label="Paper links">
+        <a class="btn" href="https://arxiv.org/pdf/2604.10108">PDF</a>
+        <a class="btn" href="#demo">Demo</a>
+        <a class="btn" href="https://soniasuns.github.io">Homepage</a>
+      </nav>
+    </header>
+
+    <section class="block teaser-block">
+      <img src="assets/teaser.png" alt="JARVIS teaser" class="figure">
+      <p class="lead"><strong>JARVIS is a VLM-driven augmented reality system that transforms a single high-level prompt into contextual, step-by-step visual instructions for cross-reality task guidance.</strong></p>
+    </section>
+
+    <hr class="rule">
+
+    <section class="block">
+      <h2>Abstract</h2>
+      <p>Many everyday tasks require users to switch between external tutorials and the task environment, increasing cognitive load and interrupting task flow. JARVIS explores how augmented reality, vision-language models, and large language models can support just-in-time guidance for cross-reality tasks. Given a high-level user prompt, JARVIS generates contextual step-by-step AR instructions, monitors task state, verifies progress in real time, and provides adaptive visual feedback. The system is designed for tasks that span physical and virtual workspaces, including real-to-real, real-to-virtual, virtual-to-real, and virtual-to-virtual guidance scenarios.</p>
+    </section>
+
+    <hr class="rule">
+
+    <section class="block">
+      <h2>Formative Study</h2>
+      <img src="assets/study.png" alt="Formative study" class="figure">
+      <p>To inform the system design, the project studies how users perform cross-reality tasks and where conventional tutorials fail to provide timely, contextual, and spatially grounded guidance.</p>
+    </section>
+
+    <hr class="rule">
+
+    <section class="block">
+      <h2>Design Goals</h2>
+      <ul class="goals">
+        <li>D1. Generate task instructions from a single high-level user prompt.</li>
+        <li>D2. Provide situated visual guidance in augmented reality.</li>
+        <li>D3. Support task transitions across physical and virtual environments.</li>
+        <li>D4. Verify user progress and task state in real time.</li>
+        <li>D5. Provide adaptive feedback when users need correction or confirmation.</li>
+        <li>D6. Reduce the need to switch between external tutorials and the task workspace.</li>
+      </ul>
+    </section>
+
+    <hr class="rule">
+
+    <section class="block">
+      <h2>System</h2>
+      <img src="assets/system.png" alt="JARVIS system overview" class="figure">
+      <p>JARVIS interprets a user’s task prompt, decomposes it into step-level instructions, grounds the instructions in cross-reality context, and presents just-in-time AR visual feedback. The system combines task planning, visual state understanding, real-time verification, and adaptive instruction generation.</p>
+    </section>
+
+    <hr class="rule">
+
+    <section class="block">
+      <h2>Cross-Reality Task Guidance</h2>
+      <img src="assets/qualitative.png" alt="Cross-reality task guidance examples" class="figure">
+      <p>JARVIS supports four types of cross-reality guidance: real-to-real, real-to-virtual, virtual-to-real, and virtual-to-virtual. These categories describe how task information and user actions move between physical objects, digital interfaces, and virtual content.</p>
+    </section>
+
+    <hr class="rule">
+
+    <section class="block">
+      <h2>Evaluation</h2>
+      <img src="assets/evaluation.png" alt="Evaluation setup" class="figure">
+      <p>The evaluation examines how JARVIS affects task performance, usability, workload, and user perception of AR visual guidance across representative cross-reality tasks.</p>
+      <img src="assets/ratings.png" alt="Evaluation results" class="figure">
+      <p class="caption">User ratings and task outcomes can be visualized here after the final results figures are prepared.</p>
+    </section>
+
+    <hr class="rule">
+
+    <section class="block">
+      <h2 id="demo">Demo Video</h2>
+      <video controls width="100%">
+        <source src="assets/demo.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </section>
+
+    <hr class="rule">
+
+    <section class="block">
+      <h2 id="code">Code</h2>
+      <p>Code will be released soon.</p>
+    </section>
+
+    <hr class="rule">
+
+    <section class="block">
+      <h2>BibTeX</h2>
+      <pre class="bibtex"><code>@article{sun2026jarvis,
+  title={JARVIS: A Just-in-Time AR Visual Instruction System for Cross-Reality Task Guidance},
+  author={Sun, Yusi and Jiang, Ying and Lu, Jiayin and Yang, Yin and Kuo, Yong-Hong and Jiang, Chenfanfu},
+  journal={arXiv preprint arXiv:2604.10108},
+  year={2026}
+}</code></pre>
+    </section>
+
+    <footer class="footer">
+      <p>This page was built for GitHub Pages.</p>
+      <p><a href="https://soniasuns.github.io/">Back to homepage</a></p>
+    </footer>
+  </main>
+</body>
+</html>
