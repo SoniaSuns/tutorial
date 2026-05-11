@@ -21,14 +21,14 @@
 
     <section class="block teaser-block">
       <img src="assets/teaser_new.png" alt="JARVIS teaser" class="figure">
-      <p class="lead"><strong>JARVIS is a VLM-driven augmented reality system that transforms a single high-level prompt into contextual, step-by-step visual instructions for cross-reality task guidance.</strong></p>
+      <p class="lead"><strong>JARVIS is a VLM-driven AR instruction system that generates contextual, step-by-step guidance from a single prompt, with real-time state verification and adaptive visual feedback.</strong></p>
     </section>
 
     <hr class="rule">
 
     <section class="block">
       <h2>Abstract</h2>
-      <p>Many everyday tasks require users to switch between external tutorials and the task environment, increasing cognitive load and interrupting task flow. JARVIS explores how augmented reality, vision-language models, and large language models can support just-in-time guidance for cross-reality tasks. Given a high-level user prompt, JARVIS generates contextual step-by-step AR instructions, monitors task state, verifies progress in real time, and provides adaptive visual feedback. The system is designed for tasks that span physical and virtual workspaces, including real-to-real, real-to-virtual, virtual-to-real, and virtual-to-virtual guidance scenarios.</p>
+      <p>Many everyday tasks rely on external tutorials such as manuals and videos, requiring users to constantly switch between reading instructions and performing actions, which disrupts workflow and increases cognitive load. Augmented reality (AR) enables in-situ guidance, while recent advances in large language models (LLMs) and vision-language models (VLMs) make it possible to automatically generate such guidance. However, existing AI-powered AR tutorial systems primarily focus on physical procedural tasks and provide limited support for hybrid physical and virtual workspaces. To address this gap, we conduct a formative study of cross-reality tasks and identify key requirements for state awareness and cross-reality coordination. We present JARVIS, a VLM-driven AR instruction system that generates contextual, step-by-step guidance from a single prompt, with real-time state verification and adaptive visual feedback. To inform the system design, we conducted a formative study to understand guidance needs across cross-reality tasks, which we categorize into four types: real-to-real (R2R), real-to-virtual (R2V), virtual-to-real (V2R), and virtual-to-virtual (V2V). A within-subjects study (N=14) across four domains shows JARVIS improves usability, workload, success rate, and visualization effectiveness over baselines. </p>
     </section>
 
     <hr class="rule">
@@ -36,21 +36,23 @@
     <section class="block">
       <h2>Formative Study</h2>
       <img src="assets/formativeexample.png" alt="Formative study examples" class="figure">
-      <img src="assets/pilotresult.png" alt="Pilot study rating results" class="figure figure-spaced">
       <p>To inform the system design, the project studies how users perform cross-reality tasks and where conventional tutorials fail to provide timely, contextual, and spatially grounded guidance.</p>
+      <img src="assets/pilotresult.png" alt="Pilot study rating results" class="figure figure-spaced">
+      <p> Error rate and completion time were influenced by guidance modality (Text (T), Image (I), and Video (V)). User also have a significant preference for video and image over text. Step-level analysis showed that text guid-ance introduced ambiguity, while video and image guidance could lead to missed steps due to occlusion or oversight.</p>
     </section>
 
     <hr class="rule">
 
     <section class="block">
-      <h2>Design Goals</h2>
+      <h2>Design Space</h2>
       <ul class="goals">
-        <li>D1. Generate task instructions from a single high-level user prompt.</li>
-        <li>D2. Provide situated visual guidance in augmented reality.</li>
-        <li>D3. Support task transitions across physical and virtual environments.</li>
-        <li>D4. Verify user progress and task state in real time.</li>
-        <li>D5. Provide adaptive feedback when users need correction or confirmation.</li>
-        <li>D6. Reduce the need to switch between external tutorials and the task workspace.</li>
+        <li>D1. Cross-Reality Step Types.</li>
+        <li>D2. State Cues.</li>
+        <li>D3. Target Configuration Preview.</li>
+        <li>D4. Correct/Error Feedback.</li>
+        <li>D5. Action Embodiment.</li>
+        <li>D6. Static Cues.</li>
+        <li>D7. Motion Cues.</li>
       </ul>
     </section>
 
@@ -67,7 +69,7 @@
     <section class="block">
       <h2>Cross-Reality Task Guidance</h2>
       <img src="assets/digitalpainting-1.png" alt="Cross-reality task guidance examples" class="figure">
-      <p>JARVIS supports four types of cross-reality guidance: real-to-real, real-to-virtual, virtual-to-real, and virtual-to-virtual. These categories describe how task information and user actions move between physical objects, digital interfaces, and virtual content.</p>
+      <p>JARVIS guidance examples across the four user study tasks: (1) coffee machine latte-making with target configuration preview, gesture, motion, tool, and bounding box, (2) digital painting with tool and motion trajectory overlays, (3) origami boat folding with gesture, shape preview and arrow guidance, (4) gaming task with state cues, tool, bounding box and arrow indicators.</p>
     </section>
 
     <hr class="rule">
@@ -75,9 +77,11 @@
     <section class="block">
       <h2>Evaluation</h2>
       <img src="assets/figure_4panels.png" alt="Evaluation overview (four panels)" class="figure">
-      <p>The evaluation examines how JARVIS affects task performance, usability, workload, and user perception of AR visual guidance across representative cross-reality tasks.</p>
+      <p>The evaluation examines how JARVIS affects task performance, system usability, and workload compared with Arrow and Image baselines.</p>
       <img src="assets/figure_viz_effectiveness_extended.png" alt="Visualization effectiveness results" class="figure figure-spaced">
+      <p>Distribution of participants’ ratings on the perceived effectiveness of eight visual guidance cues.</p>
       <img src="assets/step_completion_heatmap.png" alt="Step completion heatmap by system and task" class="figure figure-spaced">
+      <p>Step-level completion heatmap across three systems (JARVIS, arrow baseline, image baseline) and four task types (R2R, R2V, V2R, V2V). Each row represents a participant and each column an action step, color-coded by outcome: correct completion, step omission, technical error, incorrect order, and skip guidance.</p>
     </section>
 
     <hr class="rule">
