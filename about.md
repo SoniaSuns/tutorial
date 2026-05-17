@@ -1,5 +1,5 @@
 ````md
-# Cursor Task: Build a GitHub Pages Project Homepage
+# Task: Build a GitHub Pages Project Homepage
 
 Build a clean academic project homepage for the paper:
 
